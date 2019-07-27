@@ -29,7 +29,7 @@ main section#part1 {
     justify-content: space-around;
     align-content: center;
 }
-    @media (max-width: 400px) {
+    @media (max-width: 600px) {
         main section#part1 > button {
             margin-bottom: 10px;
         }
