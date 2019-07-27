@@ -1,0 +1,57 @@
+/* RESENTANDO ESTILOS */
+body {
+    margin: 0;
+}
+
+main {
+    /*background-color: red;*/
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 30vh 70vh;
+    grid-template-areas: "part1" "part2";
+}
+main section > button {
+    width: 100px;
+    height: 25px;
+}
+main section#part1 {
+    grid-area: part1;
+
+    /*background-color: black;*/
+    width: 50%;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+    @media (max-width: 400px) {
+        main section#part1 > button {
+            margin-bottom: 10px;
+        }
+    }
+
+main section#part2 {
+    grid-area: part2;
+    
+    /*border-top: 1px solid rgb(100, 95, 95);*/
+
+    /*background-color: brown;*/
+
+    display: none; /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+}
+main section#part2 > textarea {
+    width: 50%;
+    min-height: 100px;
+
+    margin-top: 20px;
+}
+main section#part2 > button {
+    margin-top: 10px;
+}
